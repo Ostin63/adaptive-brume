@@ -1,0 +1,53 @@
+$font-family: 'Playfair Display',
+'Times New Roman',
+serif;
+$font-raleway: 'Raleway',
+'Arial',
+sans-serif;
+$font-myriad: 'Myriad',
+'Arial',
+sans-serif;
+
+/*
+Light - 300
+Regular - 400
+medium - 500
+SemiBold - 600
+ExtraBold - 800
+*/
+
+:root {
+  --basic-white: #ffffff;
+  --white-gradient: #fdfaf3;
+  --white-50: rgba(255, 255, 255, 0.5);
+  --white-80: rgba(255, 255, 255, 0.8);
+  --basic-black: #000000;
+  --basic-grey: #d0d0d0;
+  --blue-dark: #374a51;
+  --black-ligth: #979695;
+  --grey-ligth: #baafa5;
+  --grey-dark: #7e7d79;
+  --grey-blue: #88929b;
+  --black: #112537;
+  --black-blue: #172f44;
+  --black-footer: #182c3d;
+  --black-10: rgba(43, 61, 77, 0.1);
+  --black-50: rgba(43, 61, 77, 0.5);
+  --black-90: rgba(43, 61, 77, 0.9);
+  --black-dark-90: rgba(18, 35, 55, 0.9);
+  --yellow-super-ligth: #fdfaf3;
+  --yellow-ligth: #fde5d0;
+  --yellow-pink: #fcbe85;
+  --yellow-special: #f6c9a3;
+  --yellow: #f8a25a;
+  --yellow-dark: #f3a055;
+  --yellow-footer: #ffc487;
+  --social-active: #f5d2b1;
+}
+
+$shadow-80: inset 0 0 2px 2px var(--white-80);
+$shadow-50: inset 0 0 2px 2px var(--white-50);
+$border-black: 2px solid var(--basic-black);
+$border-white: 4px solid var(--basic-white);
+$border-grey: 2px solid var(--grey-ligth);
+$gradient: linear-gradient(var(--basic-white) 82%, var(--white-gradient) 18%);
