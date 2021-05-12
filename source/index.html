@@ -3,87 +3,82 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Дизайн интерьеров "BRUME interior"</title>
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/favicon-180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@300;400;500;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="libs/owl.carousel.min.css">
   <link rel="stylesheet" href="libs/owl.theme.default.min.css">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
-<body>
-  <header class="header" style="background: #d0d0d0;">
+<body class="body">
+  <header class="header">
     <div class="header__nav" id="section-1">
-      <div class="header__top-menu">
-        <div class="header__logo">
-          <picture>
-            <source media="(min-width: 1360px)" srcset="img/logo.svg#top-1360">
-            <source media="(min-width: 768px)" srcset="img/logo.svg#top-768">
-            <img class="header__logo-img" src="img/logo.svg#top-320" width="37" height="23" alt="logotype">
-          </picture>
-        </div>
-        <a class="header__menu">
-          <svg class="header__toggle" role="img" width="64" height="44">
-            <use xlink:href="img/stack.svg#menu"></use>
+      <div class="header__logo">
+        <picture>
+          <source media="(min-width: 1354px)" srcset="img/logo.svg#top-1360">
+          <source media="(min-width: 768px)" srcset="img/logo.svg#top-768">
+          <img class="header__logo-img" src="img/logo.svg#top-320" width="37" height="23" alt="logotype">
+        </picture>
+      </div>
+      <a class="header__menu">
+        <span class="visually-hidden">Открыть меню навигации</span>
+      </a>
+      <a class="header__phone" href="tel:+78008234888">+7 (800) 823 48 88</a>
+    </div>
+    <ul class="header__slider">
+      <li>
+        <img src="img/header-1360.jpg" width="1163" height="595" alt="Дизайн интерьера гостиной">
+      </li>
+      <li hidden>
+        <img src="img/header-1360-1.jpg" width="1163" height="595" alt="Дизайн интерьера гостиной">
+      </li>
+      <li hidden>
+        <img src="img/header-1360-2.jpg" width="1163" height="595" alt="Дизайн интерьера гостиной">
+      </li>
+      <li hidden>
+        <img src="img/header-1360-3.jpg" width="1163" height="595" alt="Дизайн интерьера гостиной">
+      </li>
+    </ul>
+    <div class="header__bottom-text">
+      <h2 class="header__bottom-title">Дизайн интерьеров</h2>
+      <p class="header-text">Воплотим в жизнь интерьер, который будет радовоть лаконичностью и уютом</p>
+      <button class="header__button" type="submit">Заказать дизайн</button>
+    </div>
+    <ul class="header__social">
+      <li>
+        <a class="header__social-link" href="https://vk.com/feed">
+          <span class="visually-hidden">Вконтакте</span>
+          <svg class="header__link-svg" role="img" width="14" height="10">
+            <use xlink:href="img/stack.svg#vk"></use>
           </svg>
         </a>
-        <a href="tel:+78008234888" class="phone">+7 (800) 823 48 88</a>
-      </div>
-    </div>
-    <div class="header__bottom">
-      <ul class="header__slider">
-        <li>
-          <img src="img/header-1360.jpg" width="1163" height="595" alt="Дизайн интерьера гостиной">
-        </li>
-        <li>
-          <img src="img/header-1360-1.jpg" width="1163" height="595" alt="Дизайн интерьера гостиной">
-        </li>
-        <li>
-          <img src="img/header-1360-2.jpg" width="1163" height="595" alt="Дизайн интерьера гостиной">
-        </li>
-        <li>
-          <img src="img/header-1360-3.jpg" width="1163" height="595" alt="Дизайн интерьера гостиной">
-        </li>
-      </ul>
-      <div class="header__bottom-text">
-        <h2 class="header__bottm-title">Дизайн интерьеров</h2>
-        <span class="header-title">Воплотим в жизнь интерьер, который будет радовоть лаконичностью и уютом</span>
-        <button class="button" type="submit">Заказать дизайн</button>
-        <ul class="header__social">
-          <li>
-            <a class="header__social-link" href="https://vk.com/feed">
-              <span class="visually-hidden">Вконтакте</span>
-              <svg class="header__link-svg" role="img" width="14" height="10">
-                <use xlink:href="img/stack.svg#vk"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a class="header__social-link" href="https://www.instagram.com">
-              <span class="visually-hidden">Инстаграм</span>
-              <svg class="header__link-svg" role="img" width="14" height="14">
-                <use xlink:href="img/stack.svg#instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a class="header__social-link" href="https://www.facebook.com">
-              <span class="visually-hidden">Фейсбук</span>
-              <svg class="header__link-svg" role="img" width="7" height="14">
-                <use xlink:href="img/stack.svg#facebook"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
+      </li>
+      <li>
+        <a class="header__social-link" href="https://www.instagram.com">
+          <span class="visually-hidden">Инстаграм</span>
+          <svg class="header__link-svg" role="img" width="14" height="14">
+            <use xlink:href="img/stack.svg#instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a class="header__social-link" href="https://www.facebook.com">
+          <span class="visually-hidden">Фейсбук</span>
+          <svg class="header__link-svg" role="img" width="7" height="14">
+            <use xlink:href="img/stack.svg#facebook"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
   </header>
-  <div class="modal__nav" style="background: #d0d0d0;">
+  <!--<div class="modal__nav">
     <ul class="modal__menu">
       <li class="modal__item">
         <a href="#section-1" class="modal__link">Главная</a>
@@ -383,7 +378,8 @@
           <div class="reviews__info">
             <h3 class="reviews__info-title">Александра Холодная</h3>
             <span class="reviews__service">Услуга: инерьер детской</span>
-            <p class="reviews__info-text">Спасибо студии за замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро и легко, команда
+            <p class="reviews__info-text">Спасибо студии за замечательный интерьер для моей 4-х летней дочки! Работа
+              прошла быстро и легко, команда
               выполнила все точно в срок, сделали все как мы и хотели.В следующий раз обратимся к BRUME!</p>
           </div>
         </li>
@@ -394,7 +390,8 @@
           <div class="reviews__info">
             <h3 class="reviews__info-title">Ксения Горячая</h3>
             <span class="reviews__service"">Услуга: инерьер спальни</span>
-            <p class="reviews__info-text">Спасибо студии за замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро и легко, команда
+            <p class=" reviews__info-text">Спасибо студии за замечательный интерьер для моей 4-х летней дочки! Работа
+              прошла быстро и легко, команда
               выполнила все точно в срок, сделали все как мы и хотели.В следующий раз обратимся к BRUME!</p>
           </div>
         </li>
@@ -405,14 +402,15 @@
           <div class="reviews__info">
             <h3 class="reviews__info-title">Иван Суровый</h3>
             <span class="reviews__service">Услуга: инерьер гаража</span>
-            <p class="reviews__info-text">Спасибо студии за замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро и легко, команда
+            <p class="reviews__info-text">Спасибо студии за замечательный интерьер для моей 4-х летней дочки! Работа
+              прошла быстро и легко, команда
               выполнила все точно в срок, сделали все как мы и хотели.В следующий раз обратимся к BRUME!</p>
           </div>
         </li>
       </ul>
     </section>
   </main>
-  <footer class="footer" id="section-6"  style="background: #d0d0d0;">
+  <footer class="footer" id="section-6" style="background: #d0d0d0;">
     <div class="main_footer__menu">
       <p class="text">BRUME interior, 2017 <span class="dog">@</span></p>
       <a class="logotype">
@@ -453,7 +451,7 @@
   </footer>
   <script src="libs/jQuery,min.js"></script>
   <script src="libs/owl.carousel.min.js"></script>
-  <script src="js/style.min.js"></script>
+  <script src="js/style.min.js"></script>-->
 </body>
 
 </html>

@@ -1,12 +1,7 @@
-$font-family: 'Playfair Display',
-'Times New Roman',
-serif;
-$font-raleway: 'Raleway',
-'Arial',
-sans-serif;
-$font-myriad: 'Myriad',
-'Arial',
-sans-serif;
+$font-playfair: 'Playfair Display', 'Times New Roman', serif;
+$font-raleway: 'Raleway', 'Arial', sans-serif;
+$font-myriad: 'Myriad', 'Arial', sans-serif;
+$font-muller: 'Muller', 'Arial', sans-serif;
 
 /*
 Light - 300
@@ -51,3 +46,6 @@ $border-black: 2px solid var(--basic-black);
 $border-white: 4px solid var(--basic-white);
 $border-grey: 2px solid var(--grey-ligth);
 $gradient: linear-gradient(var(--basic-white) 82%, var(--white-gradient) 18%);
+
+$tablet-width: 768px;
+$desktop-width: 1354px;
