@@ -94,7 +94,8 @@ const copy = (done) => {
     "source/img/favicon/favicon.svg",
     "source/*.webmanifest",
     "source/libs/*.js",
-    "source/libs/*.css"
+    "source/libs/*.css",
+    "source/video/*.mp4"
   ], {
     base: "source"
   })
