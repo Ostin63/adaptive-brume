@@ -1,9 +1,14 @@
 /*modal header*/
 const headerMenu = document.querySelector('.header__menu');
-const modalNav = document.querySelector('.modal__nav');
+const modalNav = document.querySelector('.modal');
+const modalClose = document.querySelector('.modal__close')
 
 headerMenu.onclick = () => {
   modalNav.classList.add('show');
+}
+
+modalClose.onclick = () => {
+  modalNav.classList.remove('show');
 }
 
 /*Function sliders*/
