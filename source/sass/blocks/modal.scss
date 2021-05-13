@@ -144,7 +144,7 @@
   order: 0;
 
   &:hover {
-    opacity: 0.5;
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {
@@ -155,10 +155,6 @@
 
   @media (min-width: $desktop-width) {
     opacity: 0.5;
-
-    &:hover {
-      opacity: 0.2;
-    }
   }
 }
 
