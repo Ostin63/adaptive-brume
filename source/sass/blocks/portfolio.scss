@@ -1,0 +1,121 @@
+.portfolio {
+  display: grid;
+  grid-template-columns: 13px 1fr 13px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+    grid-template-columns: 35px 1fr 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+    grid-template-columns: 1fr 1163px 1fr;
+  }
+}
+
+.portfolio__title {
+  text-align: center;
+  font-size: 45px;
+  font-family: $font-playfair;
+  grid-column: 2 / -2;
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.portfolio__control {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  grid-column: 2 / -2;
+
+  @media (min-width: $tablet-width-min) {
+    max-width: 700px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      "all all ."
+      ". design design"
+      ". . finishing";
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(3, max-content);
+    grid-column-gap: 20px;
+    grid-template-areas: "all design finishing";
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.portfolio__control-item {
+  &--all {
+    grid-area: all;
+  }
+
+  &--design {
+    grid-area: design;
+
+    @media (min-width: $desktop-width) {
+      margin: 0 auto;
+    }
+  }
+
+  &--finishing {
+    grid-area: finishing;
+  }
+}
+
+.portfolio_control-link {
+  margin-bottom: 60px;
+  display: block;
+  margin-left: auto;
+  text-decoration: none;
+  font-size: 22px;
+  line-height: 25px;
+  font-weight: 600;
+  font-family: $font-raleway;
+  color: var(--black-ligth);
+
+  &--active {
+    color: var(--basic-black);
+
+    @media (min-width: $desktop-width) {
+      border-bottom: $border-black;
+    }
+  }
+}
+
+.portfolio__slider {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  grid-column: 1 / -1;
+}
+
+.portfolio__img {
+  display: block;
+  width: 260px;
+  margin: 0 auto;
+}
+
+.portfolio__text {
+  text-align: center;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 600;
+  font-family: $font-raleway;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}

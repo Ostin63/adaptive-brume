@@ -34,3 +34,42 @@ const sliderButtons = document.querySelectorAll('.header__slider-button');
 const sliderItems = document.querySelectorAll('.header__item-img');
 
 switchSlides(sliderButtons, sliderItems);
+
+/*Slider design*/
+
+$(function () {
+  $(".slide-one").owlCarousel({
+    loop: true,
+    margin: 17,
+    center: true,
+    nav: false,
+    pagination: false,
+    touchDrag: true,
+    responsive: {
+      '0': {
+        items: 1.2
+      },
+      '320': {
+        items: 1.2
+      },
+      '768': {
+        items: 1.2,
+        margin: 40
+      },
+      '1360': {
+        margin: 0,
+        items: 1.65
+      }
+    }
+  });
+});
+
+/*Slider services*/
+
+
+/*Top slider*/
+
+const servicesButtons = document.querySelectorAll('.services__item-control');
+const servicesItems = document.querySelectorAll('.services__item');
+
+switchSlides(servicesButtons, servicesItems);

@@ -13,7 +13,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="libs/owl.carousel.min.css">
-  <link rel="stylesheet" href="libs/owl.theme.default.min.css">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
@@ -174,156 +173,165 @@
         </li>
       </ol>
     </section>
-    <!--<section class="portfolio">
-      <h2 class="portfolio__text" id="section-3">Портфолио</h2>
-      <div class="portfolio__block">
-        <div class="portfolio__control">
-          <label class="resource-1" for="card-1">Все проекты</label>
-          <label class="resource-2" for="card-2">Дизайн интерьеров</label>
-          <label class="resource-3" for="card-3">Отделочные работы</label>
+    <section class="portfolio">
+      <h2 class="portfolio__title" id="section-3">Портфолио</h2>
+      <ul class="portfolio__control">
+        <li class="portfolio__control-item portfolio__control-item--all">
+          <a class="portfolio_control-link portfolio_control-link--active" href="#">Все&nbsp;проекты</a>
+        </li>
+        <li class="portfolio__control-item portfolio__control-item--design">
+          <a class="portfolio_control-link" href="#">Дизайн&nbsp;интерьеров</a>
+        </li>
+        <li class="portfolio__control-item portfolio__control-item--finishing">
+          <a class="portfolio_control-link" href="#">Отделочные&nbsp;работы</a>
+        </li>
+      </ul>
+      <div class="portfolio__slider owl-carousel slide-one">
+        <div class="portfolio__item">
+          <picture>
+            <source media="(min-width: 1360px)" srcset="img/card-1-max-portfolio.jpg">
+            <source media="(min-width: 768px)" srcset="img/card-1-porfolio-plan.jpg">
+            <img class="portfolio__img" src="img/card-1-porfolio-mobile.jpg" alt="Дизайн интерьера гостиной">
+          </picture>
+          <p class="portfolio__text">Дизайн интерьера гостиной</p>
         </div>
-        <ul class="portfolio__slider">
-          <li class="portfolio__item">
-            <picture>
-              <source media="(min-width: 1360px)" srcset="img/card-1-max-portfolio.jpg">
-              <source media="(min-width: 768px)" srcset="img/card-1-porfolio-plan.jpg">
-              <img class="portfolio__img" src="img/card-1-porfolio-mobile.jpg" alt="Дизайн интерьера гостиной">
-            </picture>
-            <p class="portfolio__text">Дизайн интерьера гостиной</p>
-          </li>
-          <li class="portfolio__item">
-            <picture>
-              <source media="(min-width: 1360px)" srcset="img/card-3-max-portfolio.jpg">
-              <source media="(min-width: 768px)" srcset="img/card-3-porfolio-plan.jpg">
-              <img class="portfolio__img" src="img/card-3-porfolio-mobile.jpg" alt="card">
-            </picture>
-            <p class="portfolio__text">Дизайн столовой стиле «Бохо»</p>
-          </li>
-          <li class="portfolio__item">
-            <picture>
-              <source media="(min-width: 1360px)" srcset="img/card-2-max-portfolio.jpg">
-              <source media="(min-width: 768px)" srcset="img/card-2-porfolio-plan.jpg">
-              <img class="portfolio__img" src="img/card-2-porfolio-mobile.jpg" alt="card">
-            </picture>
-            <p class="portfolio__text">Дизайн интерьера гостиной</p>
-          </li>
-          <li class="portfolio__item">
-            <picture>
-              <source media="(min-width: 1360px)" srcset="img/card-4-max-portfolio.jpg">
-              <source media="(min-width: 768px)" srcset="img/card-4-porfolio-plan.jpg">
-              <img class="portfolio__img" src="img/card-4-porfolio-mobile.jpg" alt="card">
-            </picture>
-            <p class="portfolio__text">Лофт интерьер для отеля Hiloft</p>
-          </li>
-        </ul>
+        <div class="portfolio__item">
+          <picture>
+            <source media="(min-width: 1360px)" srcset="img/card-3-max-portfolio.jpg">
+            <source media="(min-width: 768px)" srcset="img/card-3-porfolio-plan.jpg">
+            <img class="portfolio__img" src="img/card-3-porfolio-mobile.jpg" alt="card">
+          </picture>
+          <p class="portfolio__text">Дизайн столовой стиле «Бохо»</p>
+        </div>
+        <div class="portfolio__item">
+          <picture>
+            <source media="(min-width: 1360px)" srcset="img/card-2-max-portfolio.jpg">
+            <source media="(min-width: 768px)" srcset="img/card-2-porfolio-plan.jpg">
+            <img class="portfolio__img" src="img/card-2-porfolio-mobile.jpg" alt="card">
+          </picture>
+          <p class="portfolio__text">Дизайн интерьера гостиной</p>
+        </div>
+        <div class="portfolio__item">
+          <picture>
+            <source media="(min-width: 1360px)" srcset="img/card-4-max-portfolio.jpg">
+            <source media="(min-width: 768px)" srcset="img/card-4-porfolio-plan.jpg">
+            <img class="portfolio__img" src="img/card-4-porfolio-mobile.jpg" alt="card">
+          </picture>
+          <p class="portfolio__text">Лофт интерьер для отеля Hiloft</p>
+        </div>
       </div>
     </section>
     <section class="services">
       <h2 class="services__title" id="section-4">Наши услуги</h2>
-      <div class="services__block">
-        <ul class="services__control">
-          <li class="services--item">Дизайн жилого помещения</li>
-          <li class="services--item">Дизайн отельных комнат</li>
-          <li class="services--item">Дизайн коммерческих объектов</li>
-          <li class="services--item">Ремонт под ключ</li>
-          <li class="services--item">Отделочные работы</li>
-          <li class="services--item">Выезд дизайнера на дом</li>
-        </ul>
-        <ul class="services__list">
-          <li class="services__item">
-            <picture>
-              <source media="(min-width: 1360px)" srcset="img/card-2-services-max.jpg">
-              <source media="(min-width: 768px)" srcset="img/card-2-services-plan.jpg">
-              <img class="services__img" src="img/card-2-services-mobile.jpg" alt="фото">
-            </picture>
-            <div class="services__info">
-              <h3 class="services__title">Дизайн жилого помещения</h3>
-              <p class="services__text">Работая с коммерческими объектами, студия изучает целевую аудиторию, создаем
-                коммерческие интерьеры
-                такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова</p>
-              <span>532 проекта</span>
-              <button class="services__button">консультация</button>
-            </div>
-          </li>
-          <li class="services__item">
-            <picture>
-              <source media="(min-width: 1360px)" srcset="img/card-3-services-max.jpg">
-              <source media="(min-width: 768px)" srcset="img/card-3-services-plan.jpg">
-              <img class="services__img" src="img/card-3-services-mobile.jpg" alt="фото">
-            </picture>
-            <div class="services__info">
-              <h3 class="services__title">Дизайн отельных комнат</h3>
-              <p class="services__text">Работая с коммерческими объектами, студия изучает целевую аудиторию, создаем
-                коммерческие интерьеры
-                такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова</p>
-              <span>532 проекта</span>
-              <button class="services__button">консультация</button>
-            </div>
-          </li>
-          <li class="services__item">
-            <picture>
-              <source media="(min-width: 1360px)" srcset="img/card-1-services-max.jpg">
-              <source media="(min-width: 768px)" srcset="img/card-1-services-plan.jpg">
-              <img class="services__img" src="img/card-1-services-mobile.jpg" alt="фото">
-            </picture>
-            <div class="services__info">
-              <h3 class="services__title">Дизайн коммерческих объектов</h3>
-              <p class="services__text">Работая с коммерческими объектами, студия изучает целевую аудиторию, создаем
-                коммерческие интерьеры
-                такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова</p>
-              <span>532 проекта</span>
-              <button class="services__button">консультация</button>
-            </div>
-          </li>
-          <li class="services__item">
-            <picture>
-              <source media="(min-width: 1360px)" srcset="img/card-2-services-max.jpg">
-              <source media="(min-width: 768px)" srcset="img/card-2-services-plan.jpg">
-              <img class="services__img" src="img/card-2-services-mobile.jpg" alt="фото">
-            </picture>
-            <div class="services__info">
-              <h3 class="services__title">Ремонт под ключ</h3>
-              <p class="services__text">Работая с коммерческими объектами, студия изучает целевую аудиторию, создаем
-                коммерческие интерьеры
-                такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова</p>
-              <span>532 проекта</span>
-              <button class="services__button">консультация</button>
-            </div>
-          </li>
-          <li class="services__item">
-            <picture>
-              <source media="(min-width: 1360px)" srcset="img/card-3-services-max.jpg">
-              <source media="(min-width: 768px)" srcset="img/card-3-services-plan.jpg">
-              <img class="services__img" src="img/card-3-services-mobile.jpg" alt="фото">
-            </picture>
-            <div class="services__info">
-              <h3 class="services__title">Отделочные работы</h3>
-              <p class="services__text">Работая с коммерческими объектами, студия изучает целевую аудиторию, создаем
-                коммерческие интерьеры
-                такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова</p>
-              <span>532 проекта</span>
-              <button class="services__button">консультация</button>
-            </div>
-          </li>
-          <li class="services__item">
-            <picture>
-              <source media="(min-width: 1360px)" srcset="img/card-1-services-max.jpg">
-              <source media="(min-width: 768px)" srcset="img/card-1-services-plan.jpg">
-              <img class="services__img" src="img/card-1-services-mobile.jpg" alt="фото">
-            </picture>
-            <div class="services__info">
-              <h3 class="services__title">Выезд дизайнера на дом</h3>
-              <p class="services__text">Работая с коммерческими объектами, студия изучает целевую аудиторию, создаем
-                коммерческие интерьеры
-                такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова</p>
-              <span>532 проекта</span>
-              <button class="services__button">консультация</button>
-            </div>
-          </li>
-        </ul>
-      </div>
+      <ul class="services__control">
+        <li class="services__item-control button-active">
+          <p class="services__item-text">Дизайн жилого помещения</p>
+        </li>
+        <li class="services__item-control">
+          <p class="services__item-text">Дизайн отельных комнат</p>
+        </li>
+        <li class="services__item-control">
+          <p class="services__item-text">Дизайн коммерческих объектов</p>
+        </li>
+        <li class="services__item-control">
+          <p class="services__item-text">Ремонт под ключ</p>
+        </li>
+        <li class="services__item-control">
+          <p class="services__item-text">Отделочные работы</p>
+        </li>
+        <li class="services__item-control">
+          <p class="services__item-text">Выезд дизайнера на дом</p>
+        </li>
+      </ul>
+      <ul class="services__list">
+        <li class="services__item active">
+          <picture>
+            <source media="(min-width: 1360px)" srcset="img/card-2-services-max.jpg">
+            <source media="(min-width: 768px)" srcset="img/card-2-services-plan.jpg">
+            <img class="services__img" src="img/card-2-services-mobile.jpg" alt="фото">
+          </picture>
+          <div class="services__info">
+            <h3 class="services__info-title">Дизайн жилого помещения</h3>
+            <p class="services__text">Работая с коммерческими объектами, студия изучает целевую аудиторию, создаем
+              коммерческие интерьеры
+              такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова</p>
+            <span class="services__info-counter">532 проекта</span>
+          </div>
+        </li>
+        <li class="services__item">
+          <picture>
+            <source media="(min-width: 1360px)" srcset="img/card-3-services-max.jpg">
+            <source media="(min-width: 768px)" srcset="img/card-3-services-plan.jpg">
+            <img class="services__img" src="img/card-3-services-mobile.jpg" alt="фото">
+          </picture>
+          <div class="services__info">
+            <h3 class="services__info-title">Дизайн отельных комнат</h3>
+            <p class="services__text">Работая с коммерческими объектами, студия изучает целевую аудиторию, создаем
+              коммерческие интерьеры
+              такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова</p>
+            <span class="services__info-counter">532 проекта</span>
+          </div>
+        </li>
+        <li class="services__item">
+          <picture>
+            <source media="(min-width: 1360px)" srcset="img/card-1-services-max.jpg">
+            <source media="(min-width: 768px)" srcset="img/card-1-services-plan.jpg">
+            <img class="services__img" src="img/card-1-services-mobile.jpg" alt="фото">
+          </picture>
+          <div class="services__info">
+            <h3 class="services__info-title">Дизайн коммерческих объектов</h3>
+            <p class="services__text">Работая с коммерческими объектами, студия изучает целевую аудиторию, создаем
+              коммерческие интерьеры
+              такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова</p>
+            <span class="services__info-counter">532 проекта</span>
+          </div>
+        </li>
+        <li class="services__item">
+          <picture>
+            <source media="(min-width: 1360px)" srcset="img/card-2-services-max.jpg">
+            <source media="(min-width: 768px)" srcset="img/card-2-services-plan.jpg">
+            <img class="services__img" src="img/card-2-services-mobile.jpg" alt="фото">
+          </picture>
+          <div class="services__info">
+            <h3 class="services__info-title">Ремонт под ключ</h3>
+            <p class="services__text">Работая с коммерческими объектами, студия изучает целевую аудиторию, создаем
+              коммерческие интерьеры
+              такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова</p>
+            <span class="services__info-counter">532 проекта</span>
+          </div>
+        </li>
+        <li class="services__item">
+          <picture>
+            <source media="(min-width: 1360px)" srcset="img/card-3-services-max.jpg">
+            <source media="(min-width: 768px)" srcset="img/card-3-services-plan.jpg">
+            <img class="services__img" src="img/card-3-services-mobile.jpg" alt="фото">
+          </picture>
+          <div class="services__info">
+            <h3 class="services__info-title">Отделочные работы</h3>
+            <p class="services__text">Работая с коммерческими объектами, студия изучает целевую аудиторию, создаем
+              коммерческие интерьеры
+              такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова</p>
+            <span class="services__info-counter">532 проекта</span>
+          </div>
+        </li>
+        <li class="services__item">
+          <picture>
+            <source media="(min-width: 1360px)" srcset="img/card-1-services-max.jpg">
+            <source media="(min-width: 768px)" srcset="img/card-1-services-plan.jpg">
+            <img class="services__img" src="img/card-1-services-mobile.jpg" alt="фото">
+          </picture>
+          <div class="services__info">
+            <h3 class="services__info-title">Выезд дизайнера на дом</h3>
+            <p class="services__text">Работая с коммерческими объектами, студия изучает целевую аудиторию, создаем
+              коммерческие интерьеры
+              такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова</p>
+            <span class="services__info-counter">532 проекта</span>
+          </div>
+        </li>
+      </ul>
+      <a class="services__button" href="#">консультация</a>
     </section>
-    <div class="video">
+    <!--<div class="video">
       <video src="video/interior-design.mp4" controls poster="img/card-video-mobile.jpg"></video>
       <h3 class="video__title">О студии дизайна интерьеров BRUME за 2 минуты</h3>
     </div>
@@ -462,9 +470,9 @@
       </ul>
       <a class="footer__label-company" href="#nohere">HolodnayaDesign</a>
     </div>
-  </footer>
+  </footer>-->
   <script src="libs/jQuery,min.js"></script>
-  <script src="libs/owl.carousel.min.js"></script>-->
+  <script src="libs/owl.carousel.min.js"></script>
   <script src="js/script.min.js"></script>
 </body>
 

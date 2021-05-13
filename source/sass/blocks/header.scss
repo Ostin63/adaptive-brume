@@ -128,11 +128,12 @@
   position: absolute;
   top: 84px;
   visibility: hidden;
+
+  &.active {
+    visibility: visible;
+  }
 }
 
-.active {
-  visibility: visible;
-}
 
 .header__slider-pagination {
   width: 167px;
@@ -163,10 +164,10 @@
   border: none;
   background: var(--basic-grey);
   cursor: pointer;
-}
 
-.button-active {
-  background: var(--grey-dark);
+  &.button-active {
+    background: var(--grey-dark);
+  }
 }
 
 .header__bottom-text {
