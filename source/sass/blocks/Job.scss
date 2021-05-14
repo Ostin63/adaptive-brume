@@ -1,0 +1,92 @@
+.Job {
+  display: grid;
+  grid-template-columns: 13px 1fr 13px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 35px 1fr 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1168px 1fr;
+  }
+}
+
+.job__title {
+  margin-top: 30px;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: normal;
+  font-family: $font-playfair;
+  grid-column: 2 / -2;
+}
+
+.Job__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  grid-column: 2 / -2;
+
+  @media (min-width: $tablet-width) {
+    counter-reset: list1;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.job__item {
+  padding-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 340px;
+    padding-left: 70px;
+  }
+
+  .job__item-title {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 22px;
+    line-height: 25px;
+    font-weight: 600;
+    font-family: $font-raleway;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 45px;
+      left: 0;
+      width: 40px;
+      height: 1px;
+      background: var(--basic-black);
+
+      @media (min-width: $tablet-width) {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: -60px;
+        width: 22px;
+        height: 22px;
+        text-align: center;
+        border-radius: 50%;
+        background: var(--social-active);
+        font-size: 12px;
+        line-height: 22px;
+        font-weight: 500;
+        opacity: 0.5;
+        counter-increment: list1;
+        content: counter(list1) "";
+      }
+    }
+  }
+}
+
+.job__item-text {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 300;
+  font-family: $font-raleway;
+}
