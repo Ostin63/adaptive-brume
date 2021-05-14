@@ -9,7 +9,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 285px 568px 310px 1fr;
-    grid-template-rows: 210px 390px 147px 120px;
+    grid-template-rows: auto 390px 147px 120px;
   }
 }
 
@@ -24,6 +24,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
     text-align: left;
     grid-column: 2 / 4;
   }
@@ -45,6 +46,7 @@
 }
 
 .services__item-control {
+  padding-right: 20px;
   color: var(--black-ligth);
 
   &.button-active {
