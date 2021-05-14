@@ -1,0 +1,210 @@
+.contacts {
+  display: grid;
+  grid-template-columns: 13px 1fr 13px;
+  grid-template-rows: 50px 180px 100px 366px 140px 75px;
+  background: url("../img/card-320-contact.jpg") 50% 50% no-repeat;
+  background-size: cover;
+
+  &::before {
+    width: 100%;
+    content: "";
+    background: var(--black-90);
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+
+    @media (min-width: $tablet-width-onli) {
+      width: 768px;
+    }
+
+    @media (min-width: $desktop-width-onli) {
+      width: 677px;
+      grid-column: 2 / -2;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 35px 1fr 35px;
+    grid-template-rows: 90px 120px 75px 366px 100px 27px;
+    background: url("../img/card-768-contact.jpg ") 50% 50% no-repeat;
+    background-size: cover;
+  }
+
+  @media (min-width: $tablet-width-onli) {
+    background-position: right;
+    background-size: 768px 778px;
+  }
+
+  @media (min-width: $desktop-width-onli) {
+    grid-template-columns: 1fr 1168px 1fr;
+    grid-template-rows: 60px 86px 85px 273px 60px 40px;
+    background: none;
+
+    &::after {
+      content: "";
+      width: 683px;
+      height: 604px;
+      margin-left: auto;
+      background: url("../img/card-max-contact.jpg") 50% 50% no-repeat;
+      background-position: right;
+      grid-column: 2 / -2;
+      grid-row: 1 / -1;
+      z-index: -1;
+    }
+  }
+
+  @media (min-width: $desktop-width-max) {
+    grid-template-columns: 1fr 1360px 1fr;
+  }
+}
+
+.contacts__title {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 45px;
+  line-height: normal;
+  font-weight: 600;
+  font-family: $font-playfair;
+  color: var(--basic-white);
+  grid-column: 2 / -2;
+  grid-row: 2 / 3;
+
+  @media (min-width: $tablet-width-onli) {
+    margin: 0;
+    margin-left: 80px;
+  }
+
+  @media (min-width: $desktop-width-onli) {
+    margin-left: 88px;
+    font-size: 32px;
+  }
+}
+
+.contacts__text {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 300;
+  font-family: $font-raleway;
+  color: var(--basic-white);
+  grid-column: 2 / -2;
+  grid-row: 3 / 4;
+
+  @media (min-width: $tablet-width-onli) {
+    margin: 0;
+    margin-left: 80px;
+  }
+
+  @media (min-width: $desktop-width-onli) {
+    margin-left: 88px;
+    padding-right: 50px;
+    padding-left: 50px;
+    font-size: 18px;
+  }
+}
+
+.contacts__form {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  grid-column: 2 / -2;
+  grid-row: 4 / 5;
+
+  @media (min-width: $tablet-width-onli) {
+    margin: 0;
+    margin-left: 80px;
+  }
+
+  @media (min-width: $desktop-width-onli) {
+    width: 370px;
+    margin-left: 154px;
+  }
+}
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contacts__label {
+  position: relative;
+}
+
+.contacts__input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 50px;
+  padding: 0;
+  padding-right: 50px;
+  border: none;
+  font-size: 18px;
+  line-height: 50px;
+  font-weight: 300;
+  font-family: $font-raleway;
+  border-bottom: $border-grey;
+  color: var(--basic-white);
+  background: var(--white-00);
+
+  &::placeholder {
+    color: var(--basic-white);
+  }
+
+  @media (min-width: $desktop-width-onli) {
+    height: 47px;
+    margin-bottom: 23px;
+  }
+}
+
+.contacts__input-icon {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    display: block;
+  }
+}
+
+.contacts__button {
+  width: 100%;
+  height: 56px;
+  border: $border-yellow;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 600;
+  font-family: $font-raleway;
+  color: var(--basic-white);
+  background: var(--yellow);
+}
+
+.contacts__bottom-text {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 300;
+  font-family: $font-raleway;
+  color: var(--basic-white);
+  align-self: end;
+  grid-column: 2 / -2;
+  grid-row: 5/ -2;
+
+  @media (min-width: $tablet-width-onli) {
+    margin: 0;
+    margin-left: 80px;
+  }
+
+  @media (min-width: $desktop-width-onli) {
+    margin-left: 88px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}

@@ -368,28 +368,45 @@
         </li>
       </ol>
     </section>
-    <!--<section class="contacts">
+    <section class="contacts">
       <h2 class="contacts__title" id="section-8">Мечтаете об интерере от BRUME?</h2>
       <p class="contacts__text">Оставьте контактные данные, менеджер свяжется с вами в течении 15 минут, для уточнения
         всех деталей.</p>
       <form class="contacts__form" action="https://echo.htmlacademy.ru/" method="POST">
-        <label>
-          <span class="visually-hidden">Введите имя</span>
-          <input type="text" placeholder="Имя*" name="name">
-        </label>
-        <label>
-          <span class="visually-hidden">Введите телефон</span>
-          <input type="text" placeholder="Телефон*" name="phone">
-        </label>
-        <label>
-          <span class="visually-hidden">Введите адрес почты</span>
-          <input type="email" placeholder="E-mail*" name="mail">
-        </label>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <label class="contacts__label">
+              <span class="visually-hidden">Введите имя</span>
+              <input class="contacts__input contacts__input--name" type="text" placeholder="Имя*" name="name">
+              <svg class="contacts__input-icon contacts__input-icon--name" role="img" width="19" height="22">
+                <use xlink:href="img/stack.svg#user"></use>
+              </svg>
+            </label>
+          </li>
+          <li class="contacts__item">
+            <label class="contacts__label">
+              <span class="visually-hidden">Введите телефон</span>
+              <input class="contacts__input contacts__input--phone" type="text" placeholder="Телефон*" name="phone">
+              <svg class="contacts__input-icon contacts__input-icon--phone" role="img" width="19" height="22">
+                <use xlink:href="img/stack.svg#phone"></use>
+              </svg>
+            </label>
+          </li>
+          <li class="contacts__item">
+            <label class="contacts__label">
+              <span class="visually-hidden">Введите адрес почты</span>
+              <input class="contacts__input contacts__input--mail" type="email" placeholder="E-mail*" name="mail">
+              <svg class="contacts__input-icon contacts__input-icon--mail" role="img" width="19" height="22">
+                <use xlink:href="img/stack.svg#mail"></use>
+              </svg>
+            </label>
+          </li>
+        </ul>
         <button class="contacts__button" type="submit">отправить</button>
       </form>
       <p class="contacts__bottom-text">Нажимая на кнопку, вы соглашаетесь с условиями обработки персональных данных</p>
     </section>
-    <section class="reviews">
+    <!--<section class="reviews">
       <h2 class="reviews__title" id="section-5">Отзывы наших клиентов</h2>
       <ul class="reviews__slider">
         <li class="reviews__item">

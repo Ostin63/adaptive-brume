@@ -6,6 +6,7 @@ $font-muller: 'Muller', 'Arial', sans-serif;
 :root {
   --basic-white: #ffffff;
   --white-gradient: #fdfaf3;
+  --white-00: rgba(255, 255, 255, 0);
   --white-50: rgba(255, 255, 255, 0.5);
   --white-80: rgba(255, 255, 255, 0.8);
   --basic-black: #000000;
@@ -45,3 +46,4 @@ $tablet-width: 768px;
 $tablet-width-onli: 928px;
 $desktop-width-onli: 1208px;
 $desktop-width: 1354px;
+$desktop-width-max: 1382px;
