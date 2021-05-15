@@ -66,10 +66,14 @@ $(function () {
 
 /*Slider services*/
 
-
-/*Top slider*/
-
 const servicesButtons = document.querySelectorAll('.services__item-control');
 const servicesItems = document.querySelectorAll('.services__item');
 
 switchSlides(servicesButtons, servicesItems);
+
+/*Slider reviews*/
+
+const reviewsButtons = document.querySelectorAll('.reviews__slider-button');
+const reviewsItems = document.querySelectorAll('.reviews__item');
+
+switchSlides(reviewsButtons, reviewsItems);
