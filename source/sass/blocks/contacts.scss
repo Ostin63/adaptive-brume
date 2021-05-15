@@ -1,64 +1,47 @@
 .contacts {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 13px 1fr 13px;
-  grid-template-rows: 50px 180px 100px 366px 140px 75px;
-  background: url("../img/card-320-contact.jpg") 50% 50% no-repeat;
-  background-size: cover;
+  grid-template-rows: 50px 180px 100px 366px 135px;
 
   &::before {
     width: 100%;
+    max-width: 677px;
     content: "";
     background: var(--black-90);
     grid-column: 1 / -1;
     grid-row: 1 / -1;
 
-    @media (min-width: $tablet-width-onli) {
-      width: 768px;
-    }
-
-    @media (min-width: $desktop-width-onli) {
-      width: 677px;
-      grid-column: 2 / -2;
-    }
   }
 
-  @media (min-width: $tablet-width) {
-    grid-template-columns: 35px 1fr 35px;
-    grid-template-rows: 90px 120px 75px 366px 100px 27px;
-    background: url("../img/card-768-contact.jpg ") 50% 50% no-repeat;
+  &::after {
+    content: "";
+    width: 100%;
+    max-width: 683px;
+    margin-left: auto;
+    background: url("../img/card-320-contact.jpg") 50% 50% no-repeat;
     background-size: cover;
-  }
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    z-index: -1;
 
-  @media (min-width: $tablet-width-onli) {
-    background-position: right;
-    background-size: 768px 778px;
-  }
-
-  @media (min-width: $desktop-width-onli) {
-    grid-template-columns: 1fr 1168px 1fr;
-    grid-template-rows: 60px 86px 85px 273px 60px 40px;
-    background: none;
-
-    &::after {
-      content: "";
-      width: 683px;
-      height: 604px;
-      margin-left: auto;
+    @media (min-width: $tablet-width) {
       background: url("../img/card-max-contact.jpg") 50% 50% no-repeat;
       background-position: right;
-      grid-column: 2 / -2;
-      grid-row: 1 / -1;
-      z-index: -1;
     }
   }
 
-  @media (min-width: $desktop-width-max) {
-    grid-template-columns: 1fr 1360px 1fr;
+  @media (min-width: $tablet-width-min-onli) {
+    grid-template-columns: 35px 1fr 35px;
+    grid-template-rows: 60px 86px 85px 273px 100px;
   }
 }
 
 .contacts__title {
-  max-width: 500px;
+  width: 100%;
+  max-width: 370px;
   margin: 0 auto;
   text-align: center;
   font-size: 45px;
@@ -69,19 +52,15 @@
   grid-column: 2 / -2;
   grid-row: 2 / 3;
 
-  @media (min-width: $tablet-width-onli) {
-    margin: 0;
-    margin-left: 80px;
-  }
-
-  @media (min-width: $desktop-width-onli) {
-    margin-left: 88px;
+  @media (min-width: $tablet-width-min-onli) {
     font-size: 32px;
+    margin-left: 135px;
   }
 }
 
 .contacts__text {
-  max-width: 500px;
+  width: 100%;
+  max-width: 370px;
   margin: 0 auto;
   text-align: center;
   font-size: 16px;
@@ -92,34 +71,21 @@
   grid-column: 2 / -2;
   grid-row: 3 / 4;
 
-  @media (min-width: $tablet-width-onli) {
-    margin: 0;
-    margin-left: 80px;
-  }
-
-  @media (min-width: $desktop-width-onli) {
-    margin-left: 88px;
-    padding-right: 50px;
-    padding-left: 50px;
+  @media (min-width: $tablet-width-min-onli) {
     font-size: 18px;
+    margin-left: 135px;
   }
 }
 
 .contacts__form {
   width: 100%;
-  max-width: 500px;
+  max-width: 370px;
   margin: 0 auto;
   grid-column: 2 / -2;
   grid-row: 4 / 5;
 
-  @media (min-width: $tablet-width-onli) {
-    margin: 0;
-    margin-left: 80px;
-  }
-
-  @media (min-width: $desktop-width-onli) {
-    width: 370px;
-    margin-left: 154px;
+  @media (min-width: $tablet-width-min-onli) {
+    margin-left: 135px;
   }
 }
 
@@ -152,16 +118,18 @@
     color: var(--basic-white);
   }
 
-  @media (min-width: $desktop-width-onli) {
-    height: 47px;
+  @media (min-width: $tablet-width-min-onli) {
+    height: 49px;
     margin-bottom: 23px;
+    font-size: 15px;
+    line-height: 47px;
   }
 }
 
 .contacts__input-icon {
   display: none;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width-min-onli) {
     position: absolute;
     top: 0;
     right: 20px;
@@ -185,8 +153,9 @@
 
 .contacts__bottom-text {
   width: 100%;
-  max-width: 500px;
+  max-width: 380px;
   margin: 0 auto;
+  margin-bottom: 50px;
   text-align: center;
   font-size: 18px;
   line-height: 25px;
@@ -197,14 +166,8 @@
   grid-column: 2 / -2;
   grid-row: 5/ -2;
 
-  @media (min-width: $tablet-width-onli) {
-    margin: 0;
-    margin-left: 80px;
-  }
-
-  @media (min-width: $desktop-width-onli) {
-    margin-left: 88px;
-    padding-left: 50px;
-    padding-right: 50px;
+  @media (min-width: $tablet-width-min-onli) {
+    margin-left: 135px;
+    margin-bottom: 30px;
   }
 }
