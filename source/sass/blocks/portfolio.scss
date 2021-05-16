@@ -92,7 +92,8 @@
 }
 
 .portfolio__slider {
-  margin: 0;
+  max-width: 1360px;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
   grid-column: 1 / -1;
