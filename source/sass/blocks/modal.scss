@@ -128,6 +128,10 @@
   }
 
   &:hover {
+    fill: var(--yellow-dark);
+  }
+
+  &:active {
     opacity: 0.5;
   }
 }
