@@ -149,6 +149,16 @@
   font-family: $font-raleway;
   color: var(--basic-white);
   background: var(--yellow);
+
+  &:hover {
+    border: $border-grey;
+    background: var(--black);
+    opacity: 0.9;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .contacts__bottom-text {
