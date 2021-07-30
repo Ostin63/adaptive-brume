@@ -13,7 +13,6 @@
     background: var(--black-90);
     grid-column: 1 / -1;
     grid-row: 1 / -1;
-
   }
 
   &::after {
@@ -95,8 +94,21 @@
   list-style: none;
 }
 
+.contacts__item {
+  position: relative;
+}
+
 .contacts__label {
   position: relative;
+}
+
+.contacts__error {
+  display: none;
+  position: absolute;
+  width: 200px;
+  top: 50px;
+  left: 0;
+  color: var(--yellow-pink);
 }
 
 .contacts__input {
@@ -117,7 +129,9 @@
   &::placeholder {
     color: var(--basic-white);
   }
-
+&.error + .contacts__error {
+  display: block;
+}
   @media (min-width: $tablet-width-min-onli) {
     height: 49px;
     margin-bottom: 23px;

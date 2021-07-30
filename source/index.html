@@ -91,6 +91,7 @@
       </li>
     </ul>
   </header>
+
   <div class="modal">
     <ul class="modal__menu">
       <li class="modal__item">
@@ -142,6 +143,7 @@
       <span class="visually-hidden">Закрыть меню</span>
     </button>
   </div>
+
   <main>
     <h1 class="visually-hidden">Студия дизайн интерьеров "BRUME interior"</h1>
     <section class="advantages" id="section-2">
@@ -375,31 +377,31 @@
       <form class="contacts__form" action="https://echo.htmlacademy.ru/" method="POST">
         <ul class="contacts__list">
           <li class="contacts__item">
-            <label class="contacts__label">
+            <label class="contacts__label" for="name"></label>
               <span class="visually-hidden">Введите имя</span>
-              <input class="contacts__input contacts__input--name" type="text" placeholder="Имя*" name="name">
+              <input class="contacts__input contacts__input--name" id="name" type="text" minlength="2" placeholder="Имя*" name="name" required>
+              <label class="contacts__error" for="phone">Ввведите данные</label>
               <svg class="contacts__input-icon contacts__input-icon--name" role="img" width="19" height="22">
                 <use xlink:href="img/stack.svg#user"></use>
               </svg>
-            </label>
           </li>
           <li class="contacts__item">
-            <label class="contacts__label">
+            <label class="contacts__label" for="phone"></label>
               <span class="visually-hidden">Введите телефон</span>
-              <input class="contacts__input contacts__input--phone" type="text" placeholder="Телефон*" name="phone">
+              <input class="contacts__input contacts__input--phone" id="phone" type="tel" placeholder="Телефон*" name="phone" required>
+              <label class="contacts__error" for="phone">Ввведите данные</label>
               <svg class="contacts__input-icon contacts__input-icon--phone" role="img" width="19" height="22">
                 <use xlink:href="img/stack.svg#phone"></use>
               </svg>
-            </label>
           </li>
           <li class="contacts__item">
-            <label class="contacts__label">
+            <label class="contacts__label" for="mail"></label>
               <span class="visually-hidden">Введите адрес почты</span>
-              <input class="contacts__input contacts__input--mail" type="email" placeholder="E-mail*" name="mail">
+              <input class="contacts__input contacts__input--mail" id="mail" type="text" placeholder="E-mail*" name="mail" required>
+              <label class="contacts__error" for="phone">Ввведите данные</label>
               <svg class="contacts__input-icon contacts__input-icon--mail" role="img" width="19" height="22">
                 <use xlink:href="img/stack.svg#mail"></use>
               </svg>
-            </label>
           </li>
         </ul>
         <button class="contacts__button" type="submit">отправить</button>
@@ -508,9 +510,28 @@
       <a class="footer__label-company" href="#">HolodnayaDesign</a>
     </div>
   </footer>
+
+  <div class="alert">
+    <!-- Сообщение об успешном создании объявления -->
+    <template id="alert__success">
+      <div class="alert__success">
+        <p class="alert__success-message">Ваше объявление<br>успешно размещено!</p>
+      </div>
+    </template>
+
+    <!-- Сообщение об ошибке при загрузке -->
+    <template id="alert__error-loading">
+      <div class="alert__error-loading">
+        <p class="alert__error-loading-messege">
+          Произошла ошибка при загрузке данных с сервера :<br>( Обновите страницу!)
+        </p>
+      </div>
+    </template>
+  </div>
+
   <script src="libs/jQuery,min.js"></script>
   <script src="libs/owl.carousel.min.js"></script>
-  <script src="js/script.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
