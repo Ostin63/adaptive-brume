@@ -18,7 +18,7 @@ const contactsForm = body.querySelector('.contacts__form');
 const inputName = contactsForm.querySelector('.contacts__input--name');
 const inputPhone = contactsForm.querySelector('.contacts__input--phone');
 const inputMail = contactsForm.querySelector('.contacts__input--mail');
-const fields = contactsForm.querySelectorAll('.contacts__input');
+// const fields = contactsForm.querySelectorAll('.contacts__input');
 
 const getTemplateContent = (block, item) =>
   block.querySelector(`#${item}`)
@@ -42,18 +42,18 @@ const resetForm = () => {
   inputMail.value = '';
 };
 
-const onChangInput = (evt) => {
-  if (!inputName.value || !inputPhone.value || !inputMail.value) {
-    evt.preventDefault();
-    for (let i = 0; i < fields.length; i++){
-      // eslint-disable-next-line prefer-const
-      let field = fields[i];
-      if (!field.value) {
-        field.classList.add('error');
-      }
-    }
-  }
-};
+// const onChangInput = (evt) => {
+//   if (!inputName.value || !inputPhone.value || !inputMail.value) {
+//     evt.preventDefault();
+//     for (let i = 0; i < fields.length; i++){
+//       // eslint-disable-next-line prefer-const
+//       let field = fields[i];
+//       if (!field.value) {
+//         field.classList.add('error');
+//       }
+//     }
+//   }
+// };
 
 const switchSlides = (switchers, slides) => {
   for (let i = 0; i < switchers.length; i++) {
@@ -166,7 +166,7 @@ const alertForm = () => {
 
 const onFormSend = (evt) => {
   evt.preventDefault();
-  onChangInput();
+  // onChangInput();
   const formData = new FormData(evt.target);
 
   sendData(dataSabmitUrl, formData, alertForm, alertError);

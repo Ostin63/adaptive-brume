@@ -82,8 +82,8 @@ const copy = (done) => {
     'source/*.ico',
     'source/img/favicon/favicon.svg',
     'source/*.webmanifest',
-    'source/libs/*.js',
-    'source/libs/*.css',
+    'source/libs/*.{js,css}',
+    // 'source/libs/*.css',
     'source/video/*.mp4',
     'source/js/*.js',      // После настройки удалить
   ], {

@@ -236,8 +236,10 @@
 .header__button {
   width: 230px;
   height: 58px;
-  display: block;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0;
   border: $border-yellow;
   font-size: 16px;
@@ -247,6 +249,8 @@
   font-family: $font-raleway;
   background: var(--yellow);
   text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
 
   &:hover {
     border: $border-grey;
@@ -270,7 +274,7 @@
     width: 280px;
     height: 58px;
     margin-left: 95px;
-    text-align: left;
+    justify-content: start;
     padding-left: 30px;
     font-size: 14px;
     line-height: 25px;
@@ -280,7 +284,7 @@
       content: "";
       width: 40px;
       height: 10px;
-      top: 23px;
+      top: 21px;
       right: 30px;
       background: url("../img/stack.svg#arrow-40") 50% 50% no-repeat;
       background-size: cover;
